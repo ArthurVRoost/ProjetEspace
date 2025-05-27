@@ -5,6 +5,7 @@ import Accueil from './pages/accueil/Accueil'
 import Destination from './pages/destination/Destination'
 import Crew from './pages/crew/Crew'
 import Technologie from './pages/technologie/Technologie'
+import Mars from './pages/mars/Mars'
 
 function App() {
   
@@ -16,6 +17,7 @@ function App() {
       <Route path='/destination' element={<Destination/>}/>
       <Route path='/crew' element={<Crew/>}/>
       <Route path='/technology' element={<Technologie/>}/>
+      <Route path='/destination/mars' element={<Mars/>}/>
     </Routes>
       
     </>
