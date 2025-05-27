@@ -4,8 +4,8 @@
     color: white;
     font-family: "Rubik";
     font-weight: 100;
-    margin-top: 5%;
-    margin-left: 10%;
+    margin-top: 3%;
+    margin-left: 13%;
     font-size: 25px;
 }
 .destiDiv1Span{
@@ -20,4 +20,45 @@
     display: flex;
     font-weight: 100;
     align-items: center;
+    margin-left: 13%;
+}
+.destiImg{
+    width: 400px;
+    height: 400px;
+}
+.destiDiv3Div1{
+    display: flex;
+    gap: 30Px;
+}
+.destiDiv3{
+    margin-left: 15%;
+    width: 35%;
+}
+.destiDiv3Div2H1{
+    font-size: 110px;
+    font-weight: 100;
+    margin:0 ;
+}
+.destiDiv3Div1P{
+    color: white;
+}
+.destiDiv3Div2P{
+    color: rgba(255, 250, 250, 0.73);
+    margin-bottom:10% ;
+}
+.destiDiv3Div2{
+    border-bottom: 1px solid gray;
+}
+.destiDiv3Div3H2{
+    font-weight: 100;
+    font-size: 15px;
+    margin-top: 6%;
+    margin-left: 55%;
+    color: rgba(168, 167, 167, 0.804);
+}
+.destiDiv3Div3H1{
+    font-weight: 100;
+    margin-left: 55%;
+    margin-top: 0;
+    font-size: 25px;
 }

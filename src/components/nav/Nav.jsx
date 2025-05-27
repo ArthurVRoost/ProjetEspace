@@ -9,11 +9,11 @@ export default function Nav() {
                     <img className='navImg' src={logo} alt="logo site" />
                 </div>
                 <div className='navDiv2'>
-                    <Link to="/"><p className='navP'>00 HOME</p></Link>
+                    <Link className='link' to="/"><p className='navP'>00 HOME</p></Link>
                     
-                    <Link to="/destination"> <p className='navP'>01 DESTINATION</p></Link>
-                    <Link to="/crew"><p className='navP'>02 CREW</p></Link>
-                    <Link to="/technology"><p className='navP'>03 TECHNOLOGY</p></Link>
+                    <Link className='link' to="/destination"> <p className='navP'>01 DESTINATION</p></Link>
+                    <Link className='link'to="/crew"><p className='navP'>02 CREW</p></Link>
+                    <Link className='link' to="/technology"><p className='navP'>03 TECHNOLOGY</p></Link>
                    
                     
                     

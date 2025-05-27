@@ -5,6 +5,7 @@ import moon from '/src/assets/destination/image-moon.png'
 import mars from '/src/assets/destination/image-mars.png'
 import titan from '/src/assets/destination/image-titan.png'
 import europa from '/src/assets/destination/image-europa.png'
+import { Link } from 'react-router-dom'
 
 export default function Destination() {
     return(
@@ -20,10 +21,10 @@ export default function Destination() {
                 </div>
                 <div className='destiDiv3'>
                     <div className='destiDiv3Div1'>
-                        <p className='destiDiv3Div1P'>MOON</p>
-                        <p className='destiDiv3Div1P'>MARS</p>
-                        <p className='destiDiv3Div1P'>EUROPA</p>
-                        <p className='destiDiv3Div1P'>TITAN</p>
+                        <Link className='link'><p className='destiDiv3Div1P'>MOON</p></Link>
+                        <Link className='link'><p className='destiDiv3Div1P'>MARS</p></Link>
+                        <Link className='link'><p className='destiDiv3Div1P'>EUROPA</p></Link>
+                        <Link className='link'><p className='destiDiv3Div1P'>TITAN</p></Link>
                     </div>
                     <div className='destiDiv3Div2'>
                         <h1 className='destiDiv3Div2H1'>MOON</h1>

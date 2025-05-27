@@ -1,6 +1,8 @@
+import { Link } from 'react-router-dom'
 import Nav from '../../components/nav/Nav'
 import './accueil.css'
 import bgHome from '/src/assets/home/background-home-desktop.jpg'
+
 export default function Accueil() {
     return(
         <>
@@ -13,7 +15,8 @@ export default function Accueil() {
                         <p className='accueilP'>Let's face it: if you want to go to spac, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relac becayse we'll give you a truly out of this world experience!</p>
                     </div>
                     <div className='accueilDiv2'>
-                        <h2 className='accueilH22'>EXPLORE</h2>
+                        <Link className='link' to="/destination"><h2 className='accueilH22'>EXPLORE</h2></Link>
+                        
                     </div>
                  </div>
             </div>
