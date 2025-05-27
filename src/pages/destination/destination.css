@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+.destiDiv1H1{
+    color: white;
+    font-family: "Rubik";
+    font-weight: 100;
+    margin-top: 5%;
+    margin-left: 10%;
+    font-size: 25px;
+}
+.destiDiv1Span{
+    color: gray;
+    font-family: "Rubik";
+    font-weight: 100;
+    margin-right: 2%;
+}
+.divDesti{
+    font-family: "Rubik";
+    color: white;
+    display: flex;
+    font-weight: 100;
+    align-items: center;
+}
