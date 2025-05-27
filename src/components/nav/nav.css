@@ -1,0 +1,30 @@
+.divNav{
+    display: flex;
+    color: white;
+    padding-top: 5%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 5%;
+    position: relative;
+}
+.navDiv2{
+    display: flex;
+    gap: 60px;
+    background-color: rgba(59, 58, 58, 0.295);
+    padding: 20px 210px ;
+    margin-left: 25%;
+    
+}
+.navP{
+    cursor: pointer;
+}
+.divNav::after{
+    content: "";
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    border-radius: 5px;
+    top: 69%;
+    left: 8%;
+    width: 250px;
+}
