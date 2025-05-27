@@ -61,3 +61,105 @@
 .link.active::after {
     width: 100%;
 }
+/* === GLOBAL === */
+.burgerBtn {
+    display: none;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.burgerIcon {
+    width: 30px;
+    height: 30px;
+}
+
+.navDiv2 {
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 576px) {
+    .burgerBtn {
+        display: block;
+    }
+    .navDiv2 {
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.95);
+        transform: translateY(-100%);
+        padding-top: 80px;
+        gap: 30px;
+        justify-content: start;
+    }
+    .navDiv2.open {
+        transform: translateY(0);
+    }
+    .divNav {
+        
+        padding: 20px;
+    }
+
+    .divNav::after {
+        display: none;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 1089px) {
+    .burgerBtn {
+        display: block;
+    }
+
+    .navDiv2 {
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 60%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding-top: 80px;
+        padding-left: 30px;
+        gap: 30px;
+    }
+
+    .navDiv2.open {
+        right: 0;
+    }
+
+    .divNav {
+        justify-content: space-between;
+        padding: 20px;
+        position: relative;
+    }
+
+    .divNav::after {
+        display: none;
+    }
+}
+
+@media (min-width: 1090px) {
+    .burgerBtn {
+        display: none;
+    }
+
+    .navDiv2 {
+        display: flex !important;
+        position: static;
+        flex-direction: row;
+        padding: 20px 210px;
+        background-color: rgba(59, 58, 58, 0.295);
+        gap: 60px;
+        margin-left: 25%;
+    }
+
+    .divNav::after {
+        display: block;
+    }
+}
