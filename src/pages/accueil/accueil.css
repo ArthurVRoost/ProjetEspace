@@ -93,5 +93,30 @@
     }
 }
 @media (min-width:769px) and (max-width: 1090px) {
-    
+    body{
+        overflow-x: hidden;
+    }
+    .divAccueil{
+        flex-direction: column;
+    }
+    .accueilH21{
+        font-size: 20px;
+    }
+    .accueilH1{
+        font-weight: 100;
+        font-size: 80px;
+        margin: 0;
+    }
+    .accueilDiv1{
+        width: 90%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -5%;
+    }
+    .accueilDiv2{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+    }
 }

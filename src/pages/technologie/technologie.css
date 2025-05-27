@@ -161,5 +161,42 @@
     }
 }
 @media (min-width:769px) and (max-width: 1090px) {
-    
+    body{
+        overflow-x: hidden;
+    }
+    .divTech{
+        flex-direction: column;
+    }
+    .techDiv1{
+        margin-top: 2%;
+        flex-direction: row;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .techDiv1P{
+        height: 35px;
+        width: 25px;
+
+    }
+    .techDiv2{
+        margin-top: 5%;
+        width: 100%;
+        margin-left: -5%;
+    }
+    .techDiv2H1{
+        font-size: 35px;
+    }
+    .techDiv2P{
+        font-size: 15px;
+        margin-top: -3%;
+    }
+    .techDiv3{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .techImg{
+        height: 240px;
+        width: 240px;
+        border-radius: 10px;
+    }
 }
