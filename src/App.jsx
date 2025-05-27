@@ -6,6 +6,8 @@ import Destination from './pages/destination/Destination'
 import Crew from './pages/crew/Crew'
 import Technologie from './pages/technologie/Technologie'
 import Mars from './pages/mars/Mars'
+import Europa from './pages/europa/Europa'
+import Titan from './pages/titan/Titan'
 
 function App() {
   
@@ -18,6 +20,8 @@ function App() {
       <Route path='/crew' element={<Crew/>}/>
       <Route path='/technology' element={<Technologie/>}/>
       <Route path='/destination/mars' element={<Mars/>}/>
+      <Route path='/destination/europa' element={<Europa/>}/>
+      <Route path='/destination/titan' element={<Titan/>}/>
     </Routes>
       
     </>
