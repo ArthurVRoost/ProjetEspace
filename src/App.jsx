@@ -8,6 +8,8 @@ import Technologie from './pages/technologie/Technologie'
 import Mars from './pages/mars/Mars'
 import Europa from './pages/europa/Europa'
 import Titan from './pages/titan/Titan'
+import SpacePort from './pages/spaceport/SpacePort'
+import SpaceCapsule from './pages/spacecapsule/SpaceCapsule'
 
 function App() {
   
@@ -19,6 +21,8 @@ function App() {
       <Route path='/destination' element={<Destination/>}/>
       <Route path='/crew' element={<Crew/>}/>
       <Route path='/technology' element={<Technologie/>}/>
+      <Route path='/technology/spaceport' element={<SpacePort/>}/>
+      <Route path='/technology/spacecapsule' element={<SpaceCapsule/>}/>
       <Route path='/destination/mars' element={<Mars/>}/>
       <Route path='/destination/europa' element={<Europa/>}/>
       <Route path='/destination/titan' element={<Titan/>}/>

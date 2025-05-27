@@ -1,4 +1,4 @@
-import './technologie.css'
+
 import bgTech from '/src/assets/technology/background-technology-desktop.jpg'
 import launch from '/src/assets/technology/image-launch-vehicle-portrait.jpg'
 import spacePort from '/src/assets/technology/image-spaceport-portrait.jpg'
@@ -6,7 +6,7 @@ import spaceCapsule from '/src/assets/technology/image-space-capsule-portrait.jp
 import Nav from '../../components/nav/Nav'
 import { Link } from 'react-router-dom'
 
-export default function Technologie() {
+export default function SpacePort() {
     return(
         <>
         <div className='bodyTech' style={{backgroundImage: `url(${bgTech})`, width:"100vw", backgroundSize: 'cover', height: "100vh"}}>
@@ -22,11 +22,14 @@ export default function Technologie() {
                 </div>
                 <div className='techDiv2'>
                     <h2 className='techDiv2H2'>THE TERMINOLOGY...</h2>
-                    <h1 className='techDiv2H1'>LAUNCH VEHICLE</h1>
-                    <p className='techDiv2P'>A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth’s surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it’s quite an awe-inspiring sight on the launch pad!</p>
+                    <h1 className='techDiv2H1'>SPACEPORT</h1>
+                    <p className='techDiv2P'> A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, 
+  by analogy to the seaport for ships or airport for aircraft. Based in the 
+  famous Cape Canaveral, our spaceport is ideally situated to take advantage 
+  of the Earth’s rotation for launch.</p>
                 </div>
                 <div className='techDiv3'>
-                    <img className='techImg' src={launch} alt="" />
+                    <img className='techImg' src={spacePort} alt="" />
                 </div>
             </div>
          
