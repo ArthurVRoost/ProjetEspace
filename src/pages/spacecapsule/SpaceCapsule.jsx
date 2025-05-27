@@ -1,10 +1,10 @@
-
+import '../technologie/technologie.css'
 import bgTech from '/src/assets/technology/background-technology-desktop.jpg'
 import launch from '/src/assets/technology/image-launch-vehicle-portrait.jpg'
 import spacePort from '/src/assets/technology/image-spaceport-portrait.jpg'
 import spaceCapsule from '/src/assets/technology/image-space-capsule-portrait.jpg'
 import Nav from '../../components/nav/Nav'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 export default function SpaceCapsule() {
     return(
@@ -16,9 +16,27 @@ export default function SpaceCapsule() {
             </div>
             <div className='divTech'>   
                 <div className='techDiv1'>
-                    <Link to="/technology" className='link'><p className='techDiv1P'>1</p></Link>
-                    <Link to="/technology/spaceport" className='link'><p className='techDiv1P'>2</p></Link>
-                    <Link to="/technology/spacecapsule" className='link'><p className='techDiv1P'>3</p></Link>
+                  <NavLink 
+                        to="/technology" 
+                        className={({ isActive }) => isActive ? 'link active' : 'link'}
+                        end
+                    >
+                        <p className='techDiv1P'>1</p>
+                    </NavLink>
+                    
+                    <NavLink 
+                        to="/technology/spaceport" 
+                        className={({ isActive }) => isActive ? 'link active' : 'link'}
+                    >
+                        <p className='techDiv1P'>2</p>
+                    </NavLink>
+                    
+                    <NavLink 
+                        to="/technology/spacecapsule" 
+                        className={({ isActive }) => isActive ? 'link active' : 'link'}
+                    >
+                        <p className='techDiv1P'>3</p>
+                    </NavLink>
                 </div>
                 <div className='techDiv2'>
                     <h2 className='techDiv2H2'>THE TERMINOLOGY...</h2>
