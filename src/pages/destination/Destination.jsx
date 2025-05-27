@@ -5,7 +5,7 @@ import moon from '/src/assets/destination/image-moon.png'
 import mars from '/src/assets/destination/image-mars.png'
 import titan from '/src/assets/destination/image-titan.png'
 import europa from '/src/assets/destination/image-europa.png'
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 export default function Destination() {
     return(
@@ -13,7 +13,7 @@ export default function Destination() {
         <div className='bodyDestination' style={{backgroundImage: `url(${bgDesti})`, width:"100vw", backgroundSize: 'cover', height: "100vh"}}>
             <Nav/>
             <div className='destiDiv1'>
-                <h1 className='destiDiv1H1'><span className='destiDiv1Span'>01</span> PICK YOUR DESTINATION</h1>
+                 <h1 className='destiDiv1H1'><span className='destiDiv1Span'>01</span> PICK YOUR DESTINATION</h1>
             </div>
             <div className='divDesti'>
                 <div className='destiDiv2'>
@@ -21,13 +21,34 @@ export default function Destination() {
                 </div>
                 <div className='destiDiv3'>
                     <div className='destiDiv3Div1'>
+                        <NavLink 
+                            to="/destination" 
+                            className={({ isActive }) => isActive ? "link active" : "link"}
+                            end
+                        >
+                            <p className='destiDiv3Div1P'>MOON</p>
+                        </NavLink>
                         
-                            <Link to="/destination" className="link"><p className='destiDiv3Div1P'>MOON</p></Link>
-                            <Link to="/destination/mars" className="link"><p className='destiDiv3Div1P'>MARS</p></Link>
-                            <Link to="/destination/europa" className="link"><p className='destiDiv3Div1P'>EUROPA</p></Link>
-                            <Link to="/destination/titan" className="link"><p className='destiDiv3Div1P'>TITAN</p></Link>
+                        <NavLink 
+                            to="/destination/mars" 
+                            className={({ isActive }) => isActive ? "link active" : "link"}
+                        >
+                            <p className='destiDiv3Div1P'>MARS</p>
+                        </NavLink>
                         
+                        <NavLink 
+                            to="/destination/europa" 
+                            className={({ isActive }) => isActive ? "link active" : "link"}
+                        >
+                            <p className='destiDiv3Div1P'>EUROPA</p>
+                        </NavLink>
                         
+                        <NavLink 
+                            to="/destination/titan" 
+                            className={({ isActive }) => isActive ? "link active" : "link"}
+                        >
+                            <p className='destiDiv3Div1P'>TITAN</p>
+                        </NavLink>
                     </div>
                     <div className='destiDiv3Div2'>
                         <h1 className='destiDiv3Div2H1'>MOON</h1>

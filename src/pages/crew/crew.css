@@ -50,3 +50,41 @@ body{
 
     margin-left: 15%;
 }
+.divPoint {
+    display: flex;
+    gap: 15px; 
+    align-items: center;
+    margin-top: 20px;
+}
+.divPoint .link {
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-bottom: none !important;
+    padding-bottom: 0 !important;
+}
+.divPoint .link::after {
+    display: none !important;
+}
+.divPoint .point {
+    color: white;
+    font-size: 20px; 
+    opacity: 0.5; 
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.divPoint .link.active .point {
+    font-size: 30px; 
+    opacity: 1; 
+    color: white;
+}
+
+
+.divPoint .link:hover:not(.active) .point {
+    opacity: 0.75;
+    transform: scale(1.1);
+}
+
+
+
+
+

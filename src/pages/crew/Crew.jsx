@@ -4,7 +4,7 @@ import mark from '/src/assets/crew/image-mark-shuttleworth.png'
 import anou from '/src/assets/crew/image-anousheh-ansari.png'
 import victor from '/src/assets/crew/image-victor-glover.png'
 import bgCrew from '/src/assets/crew/background-crew-desktop.jpg'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import Nav from '../../components/nav/Nav'
 
 export default function Crew() {
@@ -21,12 +21,35 @@ export default function Crew() {
                         <h1 className='crewDiv1H1'>DOUGLAS HURLEY</h1>
                         <p className='crewDiv1P'>Douglas Gerald Hurley is an American engineer, former Marine Corps Pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2</p>
                         <div className='divPoint'>
-                            <Link to="/crew" className='link'><span className='point'>.</span></Link>
-                            <Link to="/crew/mark" className='link'><span className='point'>.</span></Link>
-                            <Link to="/crew/anou" className='link'><span className='point'>.</span></Link>
-                            <Link to="/crew/victor" className='link'><span className='point'>.</span></Link> 
+                            <NavLink 
+                                to="/crew" 
+                                className={({ isActive }) => isActive ? 'link active' : 'link'}
+                                end
+                            >
+                                <span className='point'>●</span>
+                            </NavLink>
+                            
+                            <NavLink 
+                                to="/crew/mark" 
+                                className={({ isActive }) => isActive ? 'link active' : 'link'}
+                            >
+                                <span className='point'>●</span>
+                            </NavLink>
+                            
+                            <NavLink 
+                                to="/crew/anou" 
+                                className={({ isActive }) => isActive ? 'link active' : 'link'}
+                            >
+                                <span className='point'>●</span>
+                            </NavLink>
+                            
+                            <NavLink 
+                                to="/crew/victor" 
+                                className={({ isActive }) => isActive ? 'link active' : 'link'}
+                            >
+                                <span className='point'>●</span>
+                            </NavLink>
                         </div>
-                        
                     </div>
                     <div className='crewDiv2'>
                         <img className='crewImg' src={douglas} alt="" />

@@ -38,3 +38,26 @@
     text-decoration: none;
     color: white;
 }
+.link {
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    transition: border-bottom 0.3s ease;
+}
+
+
+.link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    top: 135%;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: white; 
+    transition: width 0.3s ease
+}
+
+.link.active::after {
+    width: 100%;
+}
