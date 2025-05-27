@@ -1,3 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 body{
     background-color: #0C0E17;
+}
+.divCrew{
+    margin-left: 13%;
+    color: white;
+    font-weight: 100;
+    display: flex;
+    
+}
+.crewDiv1{
+    width: 35%;
+}
+.crewDiv1H2{
+    font-weight: 100;
+    font-family: "Rubik";
+}
+.crewDiv1H1{
+    font-weight: 100;
+    font-family: "Rubik";
+}
+
+.crewDiv1P{
+    font-weight: 100;
+    font-family: "Rubik";
+}
+.divPoint{
+    display: flex;
+}
+.point{
+    font-size: 105px;
+}
+.crewImg{
+    height: 300px;
 }
