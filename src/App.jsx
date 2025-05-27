@@ -1,13 +1,14 @@
 
 import './App.css'
-import Nav from './components/nav/Nav'
+
+import Accueil from './pages/accueil/Accueil'
 
 function App() {
   
 
   return (
     <>
-      <Nav/>
+      <Accueil/>
     </>
   )
 }
