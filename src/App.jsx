@@ -10,6 +10,9 @@ import Europa from './pages/europa/Europa'
 import Titan from './pages/titan/Titan'
 import SpacePort from './pages/spaceport/SpacePort'
 import SpaceCapsule from './pages/spacecapsule/SpaceCapsule'
+import Mark from './pages/mark/Mark'
+import Anou from './pages/anou/Anou'
+import Victor from './pages/victor/Victor'
 
 function App() {
   
@@ -20,6 +23,9 @@ function App() {
       <Route path='/' element={<Accueil/>}/>
       <Route path='/destination' element={<Destination/>}/>
       <Route path='/crew' element={<Crew/>}/>
+      <Route path='/crew/mark' element={<Mark/>}/>
+      <Route path='/crew/anou' element={<Anou/>}/>
+      <Route path='/crew/victor' element={<Victor/>}/>
       <Route path='/technology' element={<Technologie/>}/>
       <Route path='/technology/spaceport' element={<SpacePort/>}/>
       <Route path='/technology/spacecapsule' element={<SpaceCapsule/>}/>

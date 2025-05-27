@@ -1,4 +1,4 @@
-import './crew.css'
+
 import douglas from '/src/assets/crew/image-douglas-hurley.png'
 import mark from '/src/assets/crew/image-mark-shuttleworth.png'
 import anou from '/src/assets/crew/image-anousheh-ansari.png'
@@ -7,7 +7,7 @@ import bgCrew from '/src/assets/crew/background-crew-desktop.jpg'
 import { Link } from 'react-router-dom'
 import Nav from '../../components/nav/Nav'
 
-export default function Crew() {
+export default function Anou() {
     return(
         <>
             <div className='bodyCrew' style={{backgroundImage: `url(${bgCrew})`, width:"100vw", backgroundSize: 'cover', height: "100vh", backgroundPositionY:"-80px"}} >
@@ -17,9 +17,11 @@ export default function Crew() {
                 </div>
                 <div className='divCrew'>
                     <div className='crewDiv1'>
-                        <h2 className='crewDiv1H2'>COMMANDER</h2>
-                        <h1 className='crewDiv1H1'>DOUGLAS HURLEY</h1>
-                        <p className='crewDiv1P'>Douglas Gerald Hurley is an American engineer, former Marine Corps Pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2</p>
+                        <h2 className='crewDiv1H2'>FLIGHT ENGINEER</h2>
+                        <h1 className='crewDiv1H1'>Anousheh Ansari</h1>
+                        <p className='crewDiv1P'>Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. 
+  Ansari was the fourth self-funded space tourist, the first self-funded woman to 
+  fly to the ISS, and the first Iranian in space.</p>
                         <div className='divPoint'>
                             <Link to="/crew" className='link'><span className='point'>.</span></Link>
                             <Link to="/crew/mark" className='link'><span className='point'>.</span></Link>
@@ -29,7 +31,7 @@ export default function Crew() {
                         
                     </div>
                     <div className='crewDiv2'>
-                        <img className='crewImg' src={douglas} alt="" />
+                        <img className='crewImg' src={anou} alt="" />
                     </div>
                 </div>
             </div>

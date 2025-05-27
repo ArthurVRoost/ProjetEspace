@@ -1,4 +1,4 @@
-import './crew.css'
+
 import douglas from '/src/assets/crew/image-douglas-hurley.png'
 import mark from '/src/assets/crew/image-mark-shuttleworth.png'
 import anou from '/src/assets/crew/image-anousheh-ansari.png'
@@ -7,7 +7,7 @@ import bgCrew from '/src/assets/crew/background-crew-desktop.jpg'
 import { Link } from 'react-router-dom'
 import Nav from '../../components/nav/Nav'
 
-export default function Crew() {
+export default function Mark() {
     return(
         <>
             <div className='bodyCrew' style={{backgroundImage: `url(${bgCrew})`, width:"100vw", backgroundSize: 'cover', height: "100vh", backgroundPositionY:"-80px"}} >
@@ -17,9 +17,11 @@ export default function Crew() {
                 </div>
                 <div className='divCrew'>
                     <div className='crewDiv1'>
-                        <h2 className='crewDiv1H2'>COMMANDER</h2>
-                        <h1 className='crewDiv1H1'>DOUGLAS HURLEY</h1>
-                        <p className='crewDiv1P'>Douglas Gerald Hurley is an American engineer, former Marine Corps Pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2</p>
+                        <h2 className='crewDiv1H2'>MISSION SPECIALIST</h2>
+                        <h1 className='crewDiv1H1'>Mark Shuttleworth</h1>
+                        <p className='crewDiv1P'>Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind 
+  the Linux-based Ubuntu operating system. Shuttleworth became the first South 
+  African to travel to space as a space tourist.</p>
                         <div className='divPoint'>
                             <Link to="/crew" className='link'><span className='point'>.</span></Link>
                             <Link to="/crew/mark" className='link'><span className='point'>.</span></Link>
@@ -29,7 +31,7 @@ export default function Crew() {
                         
                     </div>
                     <div className='crewDiv2'>
-                        <img className='crewImg' src={douglas} alt="" />
+                        <img className='crewImg' src={mark} alt="" />
                     </div>
                 </div>
             </div>

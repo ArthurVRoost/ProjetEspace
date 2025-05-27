@@ -1,4 +1,4 @@
-import './crew.css'
+
 import douglas from '/src/assets/crew/image-douglas-hurley.png'
 import mark from '/src/assets/crew/image-mark-shuttleworth.png'
 import anou from '/src/assets/crew/image-anousheh-ansari.png'
@@ -7,7 +7,7 @@ import bgCrew from '/src/assets/crew/background-crew-desktop.jpg'
 import { Link } from 'react-router-dom'
 import Nav from '../../components/nav/Nav'
 
-export default function Crew() {
+export default function Victor() {
     return(
         <>
             <div className='bodyCrew' style={{backgroundImage: `url(${bgCrew})`, width:"100vw", backgroundSize: 'cover', height: "100vh", backgroundPositionY:"-80px"}} >
@@ -17,9 +17,12 @@ export default function Crew() {
                 </div>
                 <div className='divCrew'>
                     <div className='crewDiv1'>
-                        <h2 className='crewDiv1H2'>COMMANDER</h2>
-                        <h1 className='crewDiv1H1'>DOUGLAS HURLEY</h1>
-                        <p className='crewDiv1P'>Douglas Gerald Hurley is an American engineer, former Marine Corps Pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2</p>
+                        <h2 className='crewDiv1H2'>PILOT</h2>
+                        <h1 className='crewDiv1H1'>VICTOR GLOVER</h1>
+                        <p className='crewDiv1P'>Pilot on the first operational flight of the SpaceX Crew Dragon to the 
+  International Space Station. Glover is a commander in the U.S. Navy where 
+  he pilots an F/A-18.He was a crew member of Expedition 64, and served as a 
+  station systems flight engineer.</p>
                         <div className='divPoint'>
                             <Link to="/crew" className='link'><span className='point'>.</span></Link>
                             <Link to="/crew/mark" className='link'><span className='point'>.</span></Link>
@@ -29,7 +32,7 @@ export default function Crew() {
                         
                     </div>
                     <div className='crewDiv2'>
-                        <img className='crewImg' src={douglas} alt="" />
+                        <img className='crewImg' src={victor} alt="" />
                     </div>
                 </div>
             </div>
