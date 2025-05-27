@@ -16,9 +16,9 @@ export default function Technologie() {
             </div>
             <div className='divTech'>   
                 <div className='techDiv1'>
-                    <p className='techDiv1P'>1</p>
-                    <p className='techDiv1P'>2</p>
-                    <p className='techDiv1P'>3</p>
+                    <Link className='link'><p className='techDiv1P'>1</p></Link>
+                    <Link className='link'><p className='techDiv1P'>2</p></Link>
+                    <Link className='link'><p className='techDiv1P'>3</p></Link>
                 </div>
                 <div className='techDiv2'>
                     <h2 className='techDiv2H2'>THE TERMINOLOGY...</h2>
