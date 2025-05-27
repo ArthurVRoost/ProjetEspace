@@ -20,6 +20,10 @@
     cursor: pointer;
     font-family: "Rubik";
     font-weight: 100;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    
 }
 .divNav::after{
     content: "";
