@@ -30,7 +30,7 @@ export default function Nav() {
             <nav className={`navDiv2 ${menuOpen ? 'open' : ''}`}>
                 <NavLink 
                     className={({ isActive }) => isActive ? 'link active' : 'link'} 
-                    to="/" onClick={() => setMenuOpen(false)}
+                    to="/ProjetEspace" onClick={() => setMenuOpen(false)}
                 >
                     <p className='navP'>00 HOME</p>
                 </NavLink>
