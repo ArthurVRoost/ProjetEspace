@@ -114,7 +114,33 @@ body{
     
 }
 @media (min-width:577px) and (max-width:768px) {
-    
+    body{
+        overflow-x: hidden;
+    }
+    .destiDiv1{
+        margin-top: 3%;
+        font-size: 15px;
+    }
+    .divCrew{
+        flex-direction: column;
+    }
+    .crewDiv1{
+        width: 100%;
+        
+    }
+    .crewDiv1H2{
+        font-size: 25px;
+    }
+    .crewDiv1H1{
+        font-size: 30px;
+    }
+    .crewDiv1P{
+        font-size: 20px;
+    }
+    .crewImg{
+        height: 200px;
+        margin-left: 40%;
+    }
 }
 @media (min-width:769px) and (max-width: 1090px) {
     
