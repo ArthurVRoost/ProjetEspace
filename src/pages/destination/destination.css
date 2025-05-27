@@ -40,11 +40,13 @@
     margin:0 ;
 }
 .destiDiv3Div1P{
-    color: white;
+    color: #D2D8F9;
+    z-index: 1;
 }
 .destiDiv3Div2P{
     color: rgba(255, 250, 250, 0.73);
     margin-bottom:10% ;
+    color: #D2D8F9;
 }
 .destiDiv3Div2{
     border-bottom: 1px solid gray;
@@ -68,8 +70,10 @@
     color: inherit;
     position: relative;
     padding-bottom: 8px;
+    color: white;
     margin-right: 20px; 
     transition: border-bottom 0.3s ease;
+    z-index: 1;
 }
 .destiDiv3Div1 .link::after {
     content: '';
@@ -78,13 +82,65 @@
     left: 0;
     width: 0;
     height: 2px;
+    color: white;
     background-color: white; 
     transition: width 0.3s ease;
+    z-index: 1;
 }
 .destiDiv3Div1 .link.active::after {
     width: 100%;
 }
 
+@media (max-width:576px) {
+    body{
+        overflow-x: hidden;
+    }
+    .divDesti{
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .destiDiv3{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .destiDiv3Div1{
+        margin-left: -40%;
+        margin-top: 10%;
+    }
+    .destiDiv3Div2{
+        margin-left: -40%;
+        margin-top: 10%;
+        width: 200%;
+    }
+    .destiDiv3Div3{
+        margin-right: 80%;
+        margin-top: 10%;
+        display: flex;
+    }
+    .destiDiv3Div2H1{
+        font-size: 60px;
+    }
+    .destiDiv1{
+        margin-top: 3%;
+        font-size: 15px;
+    }
+    .destiImg{
+        width: 200px;
+        height: 200px;
+    }   
+    .destiDiv1H1{
+        font-size: 20px;
+    }
+    
+    
 
+}
+@media (min-width:577px) and (max-width:768px) {
+    
+}
+@media (min-width:769px) and (max-width: 1090px) {
+    
+}
 
 
