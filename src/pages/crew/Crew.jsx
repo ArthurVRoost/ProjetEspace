@@ -21,10 +21,10 @@ export default function Crew() {
                         <h1 className='crewDiv1H1'>DOUGLAS HURLEY</h1>
                         <p className='crewDiv1P'>Douglas Gerald Hurley is an American engineer, former Marine Corps Pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2</p>
                         <div className='divPoint'>
-                            <span className='point'>.</span>
-                            <span className='point'>.</span>
-                            <span className='point'>.</span>
-                            <span className='point'>.</span>
+                            <Link className='link'><span className='point'>.</span></Link>
+                            <Link className='link'><span className='point'>.</span></Link>
+                            <Link className='link'><span className='point'>.</span></Link>
+                            <Link className='link'><span className='point'>.</span></Link> 
                         </div>
                         
                     </div>

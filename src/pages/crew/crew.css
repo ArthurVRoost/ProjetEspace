@@ -12,26 +12,41 @@ body{
 }
 .crewDiv1{
     width: 35%;
+    margin-top: 5%;
 }
 .crewDiv1H2{
     font-weight: 100;
     font-family: "Rubik";
+    font-size: 40px;
+    margin: 0;
+    color: #D2D8F9;
 }
 .crewDiv1H1{
     font-weight: 100;
     font-family: "Rubik";
+    font-size: 50px;
+    margin: 0;
+    margin-top: 4%;
 }
 
 .crewDiv1P{
     font-weight: 100;
     font-family: "Rubik";
+    color: #D2D8F9;
+    margin-top: 8%;
+    font-size: 20px;
 }
 .divPoint{
     display: flex;
 }
 .point{
     font-size: 105px;
+    cursor: pointer;
 }
 .crewImg{
-    height: 300px;
+    height: 450px;
+}
+.crewDiv2{
+
+    margin-left: 15%;
 }
