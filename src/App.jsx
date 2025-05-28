@@ -24,7 +24,7 @@ function App() {
   return (
     <>
     <Routes>
-      <Route path='/ProjetEspace' element={<Accueil/>}/>
+      <Route path='/' element={<Accueil/>}/>
 
       <Route path='/destination' element={<Destination/>}>
         <Route index element={<Moon/>}/>

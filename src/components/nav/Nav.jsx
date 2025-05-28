@@ -15,7 +15,7 @@ export default function Nav() {
     return (
         <div className='divNav'>
             <div className='navDiv1'>
-                <Link className="link" to="/ProjetEspace"><img className='navImg' src={logo} alt="logo site" /></Link>
+                <Link className="link" to="/"><img className='navImg' src={logo} alt="logo site" /></Link>
             </div>
 
             
@@ -30,7 +30,7 @@ export default function Nav() {
             <nav className={`navDiv2 ${menuOpen ? 'open' : ''}`}>
                 <NavLink 
                     className={({ isActive }) => isActive ? 'link active' : 'link'} 
-                    to="/ProjetEspace" onClick={() => setMenuOpen(false)}
+                    to="/" onClick={() => setMenuOpen(false)}
                 >
                     <p className='navP'>00 HOME</p>
                 </NavLink>
