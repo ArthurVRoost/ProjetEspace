@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import './nav.css'
 import logo from '/src/assets/shared/logo.svg'
 import burgerIcon from '/src/assets/shared/icon-hamburger.svg'
@@ -15,7 +15,7 @@ export default function Nav() {
     return (
         <div className='divNav'>
             <div className='navDiv1'>
-                <img className='navImg' src={logo} alt="logo site" />
+                <Link className="link" to="/ProjetEspace"><img className='navImg' src={logo} alt="logo site" /></Link>
             </div>
 
             
