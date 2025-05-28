@@ -1,5 +1,5 @@
 
-import { Link, Route, Routes } from 'react-router-dom'
+import { Link, Outlet, Route, Routes } from 'react-router-dom'
 import './App.css'
 import Accueil from './pages/accueil/Accueil'
 import Destination from './pages/destination/Destination'
@@ -13,6 +13,10 @@ import SpaceCapsule from './pages/spacecapsule/SpaceCapsule'
 import Mark from './pages/mark/Mark'
 import Anou from './pages/anou/Anou'
 import Victor from './pages/victor/Victor'
+import Moon from './pages/moon/Moon'
+import Douglas from './pages/douglas/Douglas'
+import Launch from './pages/launch/Launch.Jsx'
+
 
 function App() {
   
@@ -21,17 +25,29 @@ function App() {
     <>
     <Routes>
       <Route path='/ProjetEspace' element={<Accueil/>}/>
-      <Route path='/destination' element={<Destination/>}/>
-      <Route path='/crew' element={<Crew/>}/>
-      <Route path='/crew/mark' element={<Mark/>}/>
-      <Route path='/crew/anou' element={<Anou/>}/>
-      <Route path='/crew/victor' element={<Victor/>}/>
-      <Route path='/technology' element={<Technologie/>}/>
-      <Route path='/technology/spaceport' element={<SpacePort/>}/>
-      <Route path='/technology/spacecapsule' element={<SpaceCapsule/>}/>
-      <Route path='/destination/mars' element={<Mars/>}/>
-      <Route path='/destination/europa' element={<Europa/>}/>
-      <Route path='/destination/titan' element={<Titan/>}/>
+
+      <Route path='/destination' element={<Destination/>}>
+        <Route index element={<Moon/>}/>
+        <Route path='mars' element={<Mars/>}/>
+        <Route path='europa' element={<Europa/>}/>
+        <Route path='titan' element={<Titan/>}/>
+        <Route path='moon' element={<Moon/>}/>
+      </Route>
+
+      <Route path='/crew' element={<Crew/>}>
+        <Route index element={<Douglas/>}/>
+        <Route path='mark' element={<Mark/>}/>
+        <Route path='anou' element={<Anou/>}/>
+        <Route path='victor' element={<Victor/>}/>
+        <Route path='douglas' element={<Douglas/>}/>
+      </Route>
+
+      <Route path='/technology' element={<Technologie/>}>
+        <Route index element={<Launch/>}/>
+        <Route path='spaceport' element={<SpacePort/>}/>
+        <Route path='spacecapsule' element={<SpaceCapsule/>}/>
+        <Route path='launch' element={<Launch/>}/>
+      </Route>
     </Routes>
       
     </>
