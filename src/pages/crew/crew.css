@@ -94,9 +94,11 @@ body{
     .destiDiv1{
         margin-top: 3%;
         font-size: 15px;
+        margin-left: -10%;
     }
     .divCrew{
         flex-direction: column;
+        margin-left: 5%;
     }
     .crewDiv1{
         width: 100%;
@@ -109,7 +111,7 @@ body{
         font-size: 30px;
     }
     .crewDiv1P{
-        font-size: 20px;
+        font-size: 18px;
     }
     .crewImg{
         height: 200px;
